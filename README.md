@@ -1,1 +1,1 @@
-# js-chat
+Чат на Vanilla js
