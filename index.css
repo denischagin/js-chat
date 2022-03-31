@@ -175,4 +175,42 @@ body {
     text-decoration: none
 }
 
+.settings-unvisible {
+    height: 0;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    background-color: #111;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+
+
+.settings-visible {
+    height: 200px;
+    width: 400px;
+    position: fixed;
+    margin-left: -200px;
+    margin-top: -100px;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(119, 105, 105);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    justify-content: center;
+}
+
+.settings-visible::after {
+
+}
+
+
 
