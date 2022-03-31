@@ -89,6 +89,7 @@ document.getElementById("add-message").onclick = (e) => {
 // То что выводится в начале
 botMessage(`
 	Вот мои возможности:
+	<br>/startgame
 	${urlCommand.map((command) => {
     return `<br>${command.command} - ${command.url}`;
   })}`);
@@ -167,6 +168,7 @@ settingsBtn.addEventListener("click", () => {
         );
         botMessage(`
 				Вот мои возможности:
+				<br>/startgame
 				${urlCommand.map((command) => {
           return `<br>${command.command} - ${command.url}`;
         })}`);

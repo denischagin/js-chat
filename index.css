@@ -195,13 +195,18 @@ button {
 
 
 .settings-unvisible {
-    height: 0;
-    width: 0;
     position: fixed;
+    height: 720px;
+    width: 0px;
+    margin-left: -200px;
+    margin-top: -400px;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
     z-index: 1;
     top: 50%;
     left: 50%;
-    background-color: #111;
+    background-color: rgba(17, 17, 17, 0);
     overflow-x: hidden;
     overflow-y: hidden;
     transition: 0.5s;
@@ -230,9 +235,25 @@ button {
     
 }
 
+.settings-unvisible strong, p{
+    white-space: nowrap
+
+}
+
+.settings-unvisible strong {
+    font-size: 30px;
+}
+
+.settings-unvisible p {
+    font-size: 20px
+}
+.settings-unvisible strong, p{
+    white-space: nowrap
+
+}
+
 .settings-visible strong {
     font-size: 30px;
-    text-align: center;
 }
 
 .settings-visible p {
