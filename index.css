@@ -37,6 +37,14 @@ body {
     min-height: 100vh;
 }
 
+button {
+    font-size: 18px;
+    background-color: #d9d9d9;
+    border:3px solid #000000;
+    padding: 5px;
+    border-radius: 4px;
+}
+
 .screen-nav-wrapper {
     width: 411px;
     overflow: hidden;
@@ -141,7 +149,7 @@ body {
     height: 100%;
     width: 230px;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     top: 0;
     left: 0;
     background-color: #111;
@@ -175,6 +183,17 @@ body {
     text-decoration: none
 }
 
+.menu span {
+    font-size:20px; 
+    cursor:pointer;
+    position: fixed;
+    top: 10px;
+    z-index: 100000;
+    color: rgb(17, 0, 255);
+}
+
+
+
 .settings-unvisible {
     height: 0;
     width: 0;
@@ -186,31 +205,69 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     transition: 0.5s;
-    padding-top: 60px;
 }
 
 
 
 .settings-visible {
-    height: 200px;
-    width: 400px;
     position: fixed;
+  
+
+    height: 720px;
+    width: 400px;
     margin-left: -200px;
-    margin-top: -100px;
+    margin-top: -400px;
     z-index: 9999;
     top: 50%;
     left: 50%;
-    background-color: rgb(119, 105, 105);
-    overflow-x: hidden;
-    overflow-y: hidden;
+    
+    background-color: #d9d9d9;
+    
     transition: 0.5s;
-    padding-top: 60px;
-    justify-content: center;
+    padding: 10px;
+    border: solid 2px rgb(111, 111, 111)
+
+    
 }
 
-.settings-visible::after {
-
+.settings-visible strong {
+    font-size: 30px;
+    text-align: center;
 }
+
+.settings-visible p {
+    font-size: 20px
+}
+
+.settings-visible form {
+    display: block;
+    width: 200px;
+    position: absolute;
+    top: 610px;
+}
+
+.settings-visible button{
+    margin: 3px;
+    padding: 3px;
+}
+
+.settings-visible form input {
+    width: 300px;
+    height: 23px;
+    font-size: 21px;
+    margin: 3px;
+}
+
+.commands {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 350px;
+}
+
+
+
+
 
 
 
