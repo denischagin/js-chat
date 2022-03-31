@@ -102,20 +102,16 @@ document.getElementById("add-message").onclick = (e) => {
 
     else if (value.toLowerCase() === '/vk') {
         botMessage('Загрузка...')
-        return document.location.href = 'https://vk.com'
+        return window.open('https://vk.com') 
     }
 
     else if (value.toLowerCase() === '/yt') {
         botMessage('Загрузка...')
-        return document.location.href = 'https://youtube.com'   
+        return window.open('https://youtube.com') 
     }
 
     else if (value.toLowerCase() === 'хабиди ху') {
         return botMessage('Не дай бог')
-    }
-
-    else if (value.toLowerCase() === '/clear') {
-        return document.location.reload()
     }
 
     else{
@@ -128,5 +124,4 @@ botMessage(`Вот мои возможности:
 <br>/startgame - игра, угадай цифру от 1 до 100
 <br>/vk
 <br>/yt
-<br>/clear
 `)

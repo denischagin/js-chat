@@ -9,19 +9,29 @@
 </head>
 <body>
     <div class="screen-wrapper screen-wrapper--bg--">
+        <div class="menu">
+            <div id="mySidenav" class="sidenav">
+                <a href="" class="closebtn" style="color: white;" >×</a>
+                <button id="clear-btn">Очистить чат</button>
+                <button id="settings-btn">Настройки</button>
+              </div>
+            <span style="font-size:20px; cursor:pointer" >☰ MENU</span>
+            <!-- Menu script -->
+            <script src="./js/menu.js"></script>
+        </div>
         <div class="screen-nav-wrapper">
             <div class="screen">
                 <div class="chat">
-                    <!-- Made JS code  -->
+                    <!-- JS makes messages  -->
                 </div>
-                <form action="" class="form__message" onchange={}>
+                <form action="" class="form__message" >
                     <input type="text" id="form-for-message" placeholder="Введи что-нибудь">
                     <button id="add-message">Отправить</button>
                 </form>
+                <!-- Connecting a script -->
+                <script src="./js/chat.js"></script>
             </div>
         </div>
     </div>
-    <!-- Connecting a script -->
-    <script src="./chat.js"></script>
 </body>
 </html>
