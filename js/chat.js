@@ -159,6 +159,7 @@ settingsBtn.addEventListener("click", () => {
       // Заполняем массив
       console.log(command.value);
       if (command.value) {
+	urlCommand.pop({ command: command.value, url: url.value });
         urlCommand.push({ command: command.value, url: url.value });
         document.querySelector(".commands").insertAdjacentHTML(
           "beforeEnd",
