@@ -39,7 +39,7 @@ const divChat = document.querySelector(".chat");
 // Основные комманды бота
 const urlCommand = [
   { command: "/vk", url: "https://vk.com" },
-  { command: "/yt", url: "https://youtube.com" },
+  { command: "роспа", url: "https://drive.google.com/drive/folders/1JxFk6zqigisXMP4lbfg2GFyA5qYgoXmT" },
 ];
 
 document.getElementById("add-message").onclick = (e) => {
