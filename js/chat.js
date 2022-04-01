@@ -179,8 +179,6 @@ settingsBtn.addEventListener("click", () => {
         .classList.remove("settings-visible");
 	 document.getElementById('form-for-commands').remove()
 	  
-	// Удаляем комманды в окне настроек
-	document.querySelector('.commands').remove()
 	  
     });
 });
